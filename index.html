@@ -5,16 +5,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+
+    <link rel="stylesheet" href="style.css">
     <!-- famework -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/19c0e07b44.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+        * {
+            font-family: 'Lato', sans-serif;
+            transition: 0.5s;
+        }
+    </style>
+
 </head>
 
 <body>
+    <!-- header section -->
+    <header>
+        <div
+            class=" pl-[50px] pr-[30px] navbar bg-[#F85559] w-[1440px] rounded-[600px] m-auto flex justify-between mt-[50px]">
+            <div class="">
+                <ul class="flex justify-between  w-[346px] text-white">
+                    <li><a class="hover:underline underline-offset-1 cursor-pointer">HOME</a></li>
+                    <li>
+                        <a class="hover:underline underline-offset-1 cursor-pointer">About Us</a>
+                    </li>
+                    <li><a class="hover:underline underline-offset-1 cursor-pointer">Shop</a></li>
+                    <li><a class="hover:underline underline-offset-1 cursor-pointer">All Fruits</a></li>
+                </ul>
+            </div>
 
+
+            <div>
+
+                <img src="./images/logo.png" class="w-[55px]" alt="">
+                <p class="text-white text-[40px] font-bold ml-[16px]">Fruit Burst</p>
+
+            </div>
+
+
+            <!-- search box -->
+            <div class=" w-[400px] bg-white rounded-[50px] flex justify-evenly px-[10px]">
+                <input class="bg-transparent w-11/12 border-0 py-[10px] outline-0" type="text"
+                    placeholder="Search here">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- main banner section / slider -->
+
+    <main>
+        <section>
+            <div class="mt-[56px] flex justify-center items-center flex-col relative">
+                <div class="carousel w-[1400px] h-[600px]">
+
+                    <div id="slide1" class=" banner-1 image carousel-item relative w-[1400px]">
+                        <div class="w-full h-full flex justify-center text-center">
+                            <div>
+                                <h1 class="text-white text-[72px] w-[661px]">Exotic tastes at your doorstep</h1>
+                                <p class="text-white text-[20px] font-medium mt-[24px]">We supply highly quality organic
+                                    products</p>
+                                <button
+                                    class="font-[20px] bg-[#F85559] px-[25px] py-[10px] rounded-lg text-white mt-[32px] text-center hover:bg-[#f72c2f] transition">Shop
+                                    Now</button>
+
+
+                            </div>
+                        </div>
+
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+
+                    </div>
+
+                    <div id="slide2" class="banner-2 carousel-item relative w-[1400px]">
+                        <div class="w-full h-full flex justify-center text-center">
+                            <div>
+                                <h1 class="text-white text-[72px] w-[661px]">Exotic tastes at your doorstep</h1>
+                                <p class="text-white text-[20px] font-medium mt-[24px]">We supply highly quality organic
+                                    products</p>
+                                <button
+                                    class="font-[20px] bg-[#F85559] px-[25px] py-[10px] rounded-lg text-white mt-[32px] text-center hover:bg-[#f72c2f] transition">Shop
+                                    Now</button>
+
+
+                            </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+
+
+                    <div id="slide3" class=" banner-3 carousel-item relative w-[1400px]">
+                        <div class="w-full h-full flex justify-center text-center">
+                            <div>
+                                <h1 class="text-white text-[72px] w-[661px]">Exotic tastes at your doorstep</h1>
+                                <p class="text-white text-[20px] font-medium mt-[24px]">We supply highly quality organic
+                                    products</p>
+                                <button
+                                    class="font-[20px] bg-[#F85559] px-[25px] py-[10px] rounded-lg text-white mt-[32px] text-center hover:bg-[#f72c2f] transition">Shop
+                                    Now</button>
+
+
+                            </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+
+                    <div id="slide4" class=" banner-4 carousel-item relative w-[1400px]">
+                        <div class="w-full h-full flex justify-center text-center">
+                            <div>
+                                <h1 class="text-white text-[72px] w-[661px]">Exotic tastes at your doorstep</h1>
+                                <p class="text-white text-[20px] font-medium mt-[24px]">We supply highly quality organic
+                                    products</p>
+                                <button
+                                    class="font-[20px] bg-[#F85559] px-[25px] py-[10px] rounded-lg text-white mt-[32px] text-center hover:bg-[#f72c2f] transition">Shop
+                                    Now</button>
+
+
+                            </div>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>         
+                    </div>
+                </div>
+
+                <div class="w-[1196px] h-[250px] flex items-center justify-center bg-white rounded-lg absolute bottom-[-121px]">
+
+                    <div class="flex justify-around items-centerd gap-[90px]">
+
+                        <div class="flex justify-center items-center flex-col">
+                            <img class="w-[144px] h-[112px]" src="./images/fruit1.png" alt="">
+                            <p class="text-[#121212cc] mt-[16px] text-[20px] font-medium">Grapes</p>
+                        </div>
+
+                        <div class="flex justify-center items-center flex-col">
+                            <img class="w-[112px] h-[112px]" src="./images/fruit2.png" alt="">
+                            <p class="text-[#121212cc] mt-[16px] text-[20px] font-medium">Grapes</p>
+                        </div>
+
+                        <div class="flex justify-center items-center flex-col">
+                            <img class="w-[154px] h-[112px]" src="./images/fruit3.png" alt="">
+                            <p class="text-[#121212cc] mt-[16px] text-[20px] font-medium">Grapes</p>
+                        </div>
+
+                        <div class="flex justify-center items-center flex-col">
+                            <img class="w-[146px] h-[112px]" src="./images/fruit4.png" alt="">
+                            <p class="text-[#121212cc] mt-[16px] text-[20px] font-medium">Grapes</p>
+                        </div>
+
+                        <div class="flex justify-center items-center flex-col">
+                            <img class="w-[140px] h-[112px]" src="./images/fruit5.png" alt="">
+                            <p class="text-[#121212cc] mt-[16px] text-[20px] font-medium">Grapes</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
